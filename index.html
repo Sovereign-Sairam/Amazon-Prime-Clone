@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Clone</title>
+    <!-- ------------------------Style----------------------------->
+    <link rel="stylesheet" href="./style.css">
+    <!-- -----------------------------BootStrap-------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- -----------------------------------icons------------------------------------->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+<!-- ---------------------------font-------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="catagories-hidden">
+        <div class="catagories-hidden-left">
+            <div>
+                <h3>Top Categories</h3>
+            </div>
+            <div class="hidden-cards-container">
+                    <a href="https://www.primevideo.com/storefront/ref=atv_tc_prime?filterId=OFFER_FILTER%3DPRIME" target="_blank"> <img src="./hidden-cards/Included-With-Prime.png" class="hidden-image">
+                        <div class="catagory-card" id="catagory-card-1">
+                            Included With Prime
+                        </div>
+                    </a>
+                    <a href="https://www.primevideo.com/search/ref=atv_tc_originals_quest?phrase=Amazon%20Originals&ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwc3R1ZGlvOiUyN2FtYXpvbiUyMHN0dWRpb3MlMjclMjklMjkiLCJ0eHQiOiJBbWF6b24gT3JpZ2luYWxzIiwib2Zmc2V0IjowLCJucHNpIjozMH0%3D&queryPageType=browse" target="_blank">
+                        <img src="./hidden-cards/Amazon-Originals.png" class="hidden-image">
+                        <div class="catagory-card" id="catagory-card-2">
+                            Amazon Originals
+                        </div>
+                    </a>
+                    <a href="https://www.primevideo.com/storefront/movie/ref=atv_tc_m" target="_blank"> <img src="./hidden-cards/Movies.png" class="hidden-image">
+                        <div class="catagory-card" id="catagory-card-3">
+                            Movies
+                        </div>
+                    </a>
+                    <a href="https://www.primevideo.com/storefront/tv/ref=atv_tc_tv" target="_blank"> <img src="./hidden-cards/TV-Shows.png" class="hidden-image">
+                        <div class="catagory-card" id="catagory-card-4">
+                            TV
+                        </div>
+                    </a>
+                    <a href="https://www.primevideo.com/gp/video/offers?benefitId=hoichoiin" target="_blank"> <img src="./hidden-cards/Amazon-Originals.png" class="hidden-image">
+                        <div class="catagory-card" id="catagory-card-5">
+                            Kids
+                        </div>
+                    </a>
+            </div>
+        </div>
+        <div class="catagories-hidden-right">
+            <div class="language">
+                <div>
+                    <h3>Audio languages</h3>
+                </div>
+                <div class="language-list">
+                    <ul>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_en_quest?ie=UTF8&pageId=default&phrase=English&queryPageType=browse&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOmVuLXVzJTI3JTI5JTI5IiwidHh0IjoiRW5nbGlzaCIsIm9mZnNldCI6MCwibnBzaSI6MzB9">English</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_hi_quest?phrase=Hindi&ie=UTF8&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOmhpLWluJTI3JTI5JTI5IiwidHh0IjoiSGluZGkiLCJvZmZzZXQiOjAsIm5wc2kiOjMwfQ%3D%3D&pageId=default&queryPageType=browse">Hindi</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_te_quest?phrase=Telugu&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOnRlLWluJTI3JTI5JTI5IiwidHh0IjoiVGVsdWd1Iiwib2Zmc2V0IjowLCJucHNpIjozMH0%3D&ie=UTF8&pageId=default&queryPageType=browse">Telugu</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_ta_quest?ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOnRhLWluJTI3JTI5JTI5IiwidHh0IjoiVGFtaWwiLCJvZmZzZXQiOjAsIm5wc2kiOjMwfQ%3D%3D&queryPageType=browse&phrase=Tamil">Tamil</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_kn_quest?queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOmtuLWluJTI3JTI5JTI5IiwidHh0IjoiS2FubmFkYSIsIm9mZnNldCI6MCwibnBzaSI6MzB9&phrase=Kannada&ie=UTF8&pageId=default&queryPageType=browse">Kannada</a> </li>
+                    </ul>
+                    <ul>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_ml_quest?ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOm1sLWluJTI3JTI5JTI5IiwidHh0IjoiTWFsYXlhbGFtIiwib2Zmc2V0IjowLCJucHNpIjozMH0%3D&queryPageType=browse&phrase=Malayalam">Malayalam</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_pa_quest?ie=UTF8&pageId=default&phrase=Punjabi&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOnBhLWluJTI3JTI5JTI5IiwidHh0IjoiUHVuamFiaSIsIm9mZnNldCI6MCwibnBzaSI6MzB9&queryPageType=browse">Punjabi</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_mr_quest?queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOm1yLWluJTI3JTI5JTI5IiwidHh0IjoiTWFyYXRoaSIsIm9mZnNldCI6MCwibnBzaSI6MzB9&ie=UTF8&pageId=default&phrase=Marathi&queryPageType=browse">Marathi</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_bn_quest?ie=UTF8&pageId=default&phrase=Bengali&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOmJuLWluJTI3JTI5JTI5IiwidHh0IjoiQmVuZ2FsaSIsIm9mZnNldCI6MCwibnBzaSI6MzB9&queryPageType=browse">Bengali</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_audio_gu_quest?ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwYXZfbGFuZ3VhZ2Vfc3Bva2VuOiUyN0lOOmd1LWluJTI3JTI5JTI5IiwidHh0IjoiR3VqYXJhdGkiLCJvZmZzZXQiOjAsIm5wc2kiOjMwfQ%3D%3D&queryPageType=browse&phrase=Gujarati">Gujarati</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="genre">
+                <div>
+                    <h3>Other catagories</h3>
+                </div>
+                <div class="genre-list">
+                    <ul>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_genre_drama_quest?ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwYXZfcHJpbWFyeV9nZW5yZTolMjdhdl9nZW5yZV9kcmFtYSUyNyUyOSIsInR4dCI6IkRyYW1hIiwib2Zmc2V0IjowLCJucHNpIjozMH0%3D&queryPageType=browse&phrase=Drama">Drama</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_genre_actionadventure_quest?ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4b3IlMjBhdl9wcmltYXJ5X2dlbnJlOiUyN2F2X2dlbnJlX2FjdGlvbiUyNyUyMGF2X3ByaW1hcnlfZ2VucmU6JTI3YXZfZ2VucmVfYWR2ZW50dXJlJTI3JTI5JTI5IiwidHh0IjoiQWN0aW9uIGFuZCBhZHZlbnR1cmUiLCJvZmZzZXQiOjAsIm5wc2kiOjMwfQ%3D%3D&phrase=Action%20and%20adventure&queryPageType=browse">Action and adventure</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_genre_romance_quest?phrase=Romance&ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwYXZfcHJpbWFyeV9nZW5yZTolMjdhdl9nZW5yZV9yb21hbmNlJTI3JTI5IiwidHh0IjoiUm9tYW5jZSIsIm9mZnNldCI6MCwibnBzaSI6MzB9&queryPageType=browse">Romance</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_genre_comedy_quest?ie=UTF8&pageId=default&phrase=Comedy&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwYXZfcHJpbWFyeV9nZW5yZTolMjdhdl9nZW5yZV9jb21lZHklMjclMjkiLCJ0eHQiOiJDb21lZHkiLCJvZmZzZXQiOjAsIm5wc2kiOjMwfQ%3D%3D&queryPageType=browse">Comedy</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_genre_thriller_quest?queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwYXZfcHJpbWFyeV9nZW5yZTolMjdhdl9nZW5yZV9zdXNwZW5zZSUyNyUyOSIsInR4dCI6IlN1c3BlbnNlIiwib2Zmc2V0IjowLCJucHNpIjozMH0%3D&phrase=Suspense&ie=UTF8&pageId=default&queryPageType=browse">Suspense</a> </li>
+                        <li> <a href="https://www.primevideo.com/search/ref=atv_cat_genre_horror_quest?ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwZW50aXR5X3R5cGU6JTI3TW92aWUlMjclMjBhdl9wcmltYXJ5X2dlbnJlOiUyN2F2X2dlbnJlX2hvcnJvciUyNyUyOSUyOSIsInR4dCI6IkhvcnJvciIsIm9mZnNldCI6MCwibnBzaSI6MzB9&queryPageType=browse&phrase=Horror">Horror</a> </li>
+                        <li> <a href="https://www.primevideo.com/gp/video/storefront/ref=atv_cat_auto_award_winners?contentType=merch&contentId=INAwardsandNominations&merchId=INAwardsandNominations">Award winners</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-profile">
+        <div> Sign In</div>
+        <div>Watch Anywhere</div>
+        <div id="hidden-profile-3">Help</div>
+    </div>
+    <div class="hidden-language">
+        <ul>
+            <li>Bahasa Indonesia</li>
+            <li>Bahasa Melayu</li>
+            <li>Dansk</li>
+            <li>Deutsch</li>
+            <li>English</li>
+            <li>Español</li>
+            <li>Français</li>
+            <li>Italiano</li>
+            <li>Magyar</li>
+            <li>Nederlands</li>
+            <li>Norsk</li>
+        </ul>
+        <div class="list-line"></div>
+        <ul>
+            <li>Polski</li>
+            <li>Português (Brasil)</li>
+            <li>Português (Portugal)</li>
+            <li>Română</li>
+            <li>Suomi</li>
+            <li>Svenska</li>
+            <li>Türkçe</li>
+            <li>Wikang Filipino</li>
+            <li>Čeština</li>
+            <li>Ελληνικά</li>
+            <li>Русский</li>
+        </ul>
+        <div class="list-line"></div>
+        <ul>
+            <li>עברית</li>
+            <li>العربية</li>
+            <li>हिन्दी</li>
+            <li>தமிழ்</li>
+            <li>తెలుగు</li>
+            <li>ไทย</li>
+            <li>日本語</li>
+            <li>简体中文</li>
+            <li>繁體中文</li>
+            <li>한국어</li>
+        </ul>
+    </div>
+    <div class="browse-hidden">
+        <div class="browse-hidden-list" style="border-bottom: 1px solid #2d3f4d;"><a href="index.html">Home</a></div>
+        <div class="browse-hidden-list" style="border-bottom: 1px solid #2d3f4d;"> <a href="https://www.primevideo.com/storefront/ref=atv_hm_pri_c_9zZ8D2_1_2?merchId=RentBuy&ie=UTF8">Store</a></div>
+        <div class="browse-hidden-list" style="border-bottom: 1px solid #2d3f4d;"><a href="https://www.primevideo.com/storefront/channels/ref=atv_hm_pri_c_9zZ8D2_1_3">Channels</a></div>
+        <div class="browse-hidden-list" id="browse-hidden-list-catagories"> 
+            <p href="#" id="catagories-mobile-hidden">Categories  <i class="fa fa-caret-down" style="color: #8595a1; margin-left: 3px;"></i>  </p>
+        </div>
+        <div class="hidden-catagories-container">
+                <h3>Top catagories</h3>
+                <div><a href="https://www.primevideo.com/storefront/ref=atv_tc_prime?filterId=OFFER_FILTER%3DPRIME" target="_blank">Included With Prime</a></div>
+                <div><a href="https://www.primevideo.com/search/ref=atv_tc_originals_quest?phrase=Amazon%20Originals&ie=UTF8&pageId=default&queryToken=eyJ0eXBlIjoicXVlcnkiLCJuYXYiOmZhbHNlLCJwdCI6ImJyb3dzZSIsInBpIjoiZGVmYXVsdCIsInNlYyI6ImNlbnRlciIsInN0eXBlIjoic2VhcmNoIiwicXJ5IjoiYnE9JTI4YW5kJTIwc29ydDolMjdmZWF0dXJlZC1yYW5rJTI3JTIwJTI4YW5kJTIwc3R1ZGlvOiUyN2FtYXpvbiUyMHN0dWRpb3MlMjclMjklMjkiLCJ0eHQiOiJBbWF6b24gT3JpZ2luYWxzIiwib2Zmc2V0IjowLCJucHNpIjozMH0%3D&queryPageType=browse" target="_blank">Amazon Originals</a></div>
+                <div><a href="https://www.primevideo.com/storefront/movie/ref=atv_tc_m" target="_blank">Movies</a></div>
+                <div><a href="https://www.primevideo.com/storefront/tv/ref=atv_tc_tv" target="_blank">TV</a></div>
+                <div><a href="https://www.primevideo.com/gp/video/offers?benefitId=hoichoiin" target="_blank">Kids</a></div>
+                <h3>Other catagories</h3>
+                <div class="hidden-browsr-div">English</div>
+                <div class="hidden-browsr-div">Hindi</div>
+                <div class="hidden-browsr-div">Telugu</div>
+                <div class="hidden-browsr-div">தமிழ்</div>
+                <div class="hidden-browsr-div">简体中文</div>
+                <div class="hidden-browsr-div">Română</div>
+                <div class="hidden-browsr-div">हिन्दी</div>
+                <div class="hidden-browsr-div">Svenska</div>
+                <div class="hidden-browsr-div">Français</div>
+                <div class="hidden-browsr-div">Español</div>
+                <div class="hidden-browsr-div">Norsk</div>
+        </div>
+        <div class="browse-hidden-list"><a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Feu.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_t%3Dsgzfr4Wk3bl8jzl618ojvI0ZslYhrRGEbmufAE0lUR8_uAAAAAQAAAABkIY40cmF3AAAAAPgWC9WfHH8iB-olH_E9xQ%26location%3D%2Fmystuff%3Fref_%253Datv_auth_red_aft&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&openid.assoc_handle=amzn_prime_video_sso_in&openid.mode=checkid_setup&siteState=261-9892578-7515609&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">My<span style="margin-left: 5px;">Stuff</span></a></div>
+    </div>
+    <nav class="navbar-desktop">
+        <div class="nav-left">
+            <img src="./primeLogo.png" class="logo" alt="logo">
+            <ul class="list-container">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="https://www.primevideo.com/storefront/ref=atv_hm_pri_c_9zZ8D2_1_2?merchId=RentBuy&ie=UTF8">Store</a></li>
+                <li> <a href="https://www.primevideo.com/storefront/channels/ref=atv_hm_pri_c_9zZ8D2_1_3">Channels</a></li>
+                <li id="catagoriesId" ><a href="#" style="
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    font-weight: bolder;
+                ">Catagories<i class="fa fa-caret-down" style="color: #8595a1;" id="catagorieIcon"></i></a></li>
+                <li> <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Feu.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_t%3Dsgzfr4Wk3bl8jzl618ojvI0ZslYhrRGEbmufAE0lUR8_uAAAAAQAAAABkIY40cmF3AAAAAPgWC9WfHH8iB-olH_E9xQ%26location%3D%2Fmystuff%3Fref_%253Datv_auth_red_aft&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&openid.assoc_handle=amzn_prime_video_sso_in&openid.mode=checkid_setup&siteState=261-9892578-7515609&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">My<span style="margin-left: 5px;">Stuff</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="BrowseBtn">Browse <i class="fa fa-caret-down"></i></button>
+            <button class="tryBtn">Try for free</button>
+            <i class="fa fa-search"  id="searchIcon"></i>
+            <button class="languageBtn" id="languageBtnId"> <img src="./globe.png" alt="globe">EN <i class="fa fa-caret-down" id="languageBtnIcon"></i> </button>
+            <button class="loginBtn"> <i class="fa fa-user-o" ></i><i class="fa fa-caret-down" id="loginBtnIcon"></i> </button>
+        </div>
+    </nav>
+
+
+    <div class="dummy"></div>
+    <div class="welcome-mobile"></div>
+    <div class="welcome" id="welcome-container">
+        <!-- <img src="./images/cover-1.jpg"  class="cover-1" alt="cover-1"> -->
+        <div>
+            <h1>Welcome to Prime Video</h1>
+            <p>Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+            <button>Sign in to join prime</button>
+        </div>
+    </div>
+
+
+    <div class="rental-mobile"></div>
+    <div class="rental" id="rental-container">
+        <!-- <img src="./images/cover-1.jpg" id="cover-1" class="img-fluid" alt="cover-1"> -->
+        <div>
+            <h1>Movie rentals on Prime Video</h1>
+            <p>Early Access to new movies, before digital subscription</p>
+            <button>Rent now</button>
+        </div>
+    </div>
+
+
+    <div class="channels">
+        <div class="channels-left">
+            <h1>Your favorite channels all in one place</h1>
+            <p>With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice
+            </p>
+        </div>
+        <div class="channel-right">
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=lionsgateplayin" target="_blank"><img src="./cards/LionsgatePlay.jpg" alt="Lionsgate Play" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=discoveryplusin" target="_blank"><img src="./cards/Discovery.jpg" alt="discovery plus in" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=erosnowin" target="_blank"><img src="./cards/Erosnow.jpg" alt="Erosnow" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=manoramamaxin" target="_blank"><img src="./cards/MANORAMAMAX.jpg" alt="manoramamaxin" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=hoichoiin" target="_blank"><img src="./cards/hoichoi.jpg" alt="hoichoiin" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/ref=dv_web_force_root?contentId=vrottin&benefitId=vrottin&contentType=subscription" target="_blank"><img src="./cards/Vrott.png" alt="Vrott" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/storefront?contentType=subscription&contentId=amcplusin&benefitId=amcplusin" target="_blank"><img src="./cards/Amc.png" alt="Amc" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=docubayin" target="_blank"><img src="./cards/Docubay.jpg" alt="Docubay" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=mubiin" target="_blank"><img src="./cards/Mubi.jpg" alt="Mubi" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/ref=dv_web_force_root?contentId=iwonderin&benefitId=iwonderin&contentType=subscription" target="_blank"><img src="./cards/iWonder.png" alt="iWonder" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/ref=dv_web_force_root?contentId=stingrayin&benefitId=stingrayin&contentType=subscription" target="_blank"><img src="./cards/Stingray.png" alt="Stingray" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/ref=atv_hm_hom_5_c_byZI5Y_HSd40e1d_16_10?contentId=shortstvin&benefitId=shortstvin&contentType=subscription" target="_blank"><img src="./cards/ShortsTV.jpg" alt="ShortsTV" class="card"></a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="pairing-mobile"></div>
+    <div class="pairing" id="pairing-container">
+        <div id="pairing-info">
+            <h1>Even better with Fire TV Stick</h1>
+            <p>The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+
+
+    <div class="Friendly-mobile"></div>
+    <div class="Friendly" id="Friendly-container">
+        <div>
+            <h1>Family Friendly</h1>
+            <p>With easy to use Parental Controls and a dedicated kids page, enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.</p>
+            <button>Get started</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <img src="./footerLogo.png" alt="footerLogo">
+        <ul>
+            <li> <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a></li>
+            <li> <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Feu.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_t%3DsgxvfHi-dk4KE6LQUz8Xcfmdp7jIzz3Oyb8y2LV41qQIGAAAAAQAAAABkGysEcmF3AAAAAPgWC9WfHH8iB-olH_E9xQ%26location%3D%2Fhelp%2Fcontact-us%3Fref_%253Datv_auth_red_aft&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&openid.assoc_handle=amzn_prime_video_sso_in&openid.mode=checkid_setup&siteState=261-4272852-2934061&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Send us feedback</a></li>
+            <li> <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_help">Help</a></li>
+        </ul>
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+
+    <div class="mylogo">
+        <img src="./Logo.png" alt="Mylogo">
+    </div>
+<!-- ----------------------------appScript---------------------------->
+<script src="./app.js"></script>
+<!-- -----------------------------BootStrap---------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
